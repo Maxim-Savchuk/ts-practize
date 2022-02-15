@@ -1,7 +1,12 @@
-import "./01-primitives";
-import "./02-arrays";
-import "./03-types";
-import "./04-interfaces";
-import "./05-enums";
-import "./06-functions";
-import "./07-classes";
+import React from 'react';
+import { render } from 'react-dom';
+import { BrowserRouter } from 'react-router-dom';
+import App from './components/App';
+import './styles.css';
+
+render(
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>,
+  document.querySelector('#root'),
+);
